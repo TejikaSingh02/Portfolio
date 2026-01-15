@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #3b82f6; /* Example primary */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
