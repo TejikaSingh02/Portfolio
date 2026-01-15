@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X, Moon, Sun } from 'lucide-react';
-import { clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
-
-export function cn(...inputs) {
-    return twMerge(clsx(inputs));
-}
+import { cn } from '../lib/utils';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('theme') === 'dark' ||
+                (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        }
+        return false;
+    });
+
+    React.useEffect(() => {
+        if (darkMode) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    }, [darkMode]);
 
     // Toggle Dark Mode
     const toggleTheme = () => {
         setDarkMode(!darkMode);
-        document.documentElement.classList.toggle('dark');
     };
 
     const navLinks = [

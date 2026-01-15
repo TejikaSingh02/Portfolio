@@ -49,7 +49,7 @@ const Skills = () => {
                         <BadgeCheck className="text-white mt-1 flex-shrink-0" size={18} />
                         <div className="ml-3 w-full">
                             <h4 className="font-medium text-white leading-none">{skill.name}</h4>
-                            <span className="text-xs text-gray-400 mt-1 block">{skill.level}</span>
+                            <span className="text-xs text-gray-400 dark:text-gray-300 mt-1 block">{skill.level}</span>
 
                             {/* Render sub-skills if they exist (specifically for Algorithms) */}
                             {skill.subSkills && (
@@ -57,7 +57,7 @@ const Skills = () => {
                                     {skill.subSkills.map((sub, idx) => (
                                         <div key={idx} className="flex items-center">
                                             <BadgeCheck className="text-white mr-2" size={12} />
-                                            <span className="text-xs text-gray-300">{sub}</span>
+                                            <span className="text-xs text-gray-300 dark:text-gray-300">{sub}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -70,7 +70,7 @@ const Skills = () => {
     );
 
     return (
-        <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
+        <section id="skills" className="py-20 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

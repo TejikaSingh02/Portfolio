@@ -8,7 +8,7 @@ const Qualification = () => {
     const toggleTab = (tab) => setActiveTab(tab);
 
     return (
-        <section id="qualification" className="py-20 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
+        <section id="qualification" className="py-20 transition-colors duration-300">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-right">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Computer Science</h3>
                                     <span className="text-gray-500 dark:text-gray-400">GLA University</span>
-                                    <div className="flex items-center justify-end text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center justify-end text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2023 - 2027
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-left">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Intermediate</h3>
                                     <span className="text-gray-500 dark:text-gray-400">Our Lady Of Fatima school</span>
-                                    <div className="flex items-center text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2023
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-right">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">High school</h3>
                                     <span className="text-gray-500 dark:text-gray-400">Our Lady Of Fatima school</span>
-                                    <div className="flex items-center justify-end text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center justify-end text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2021
                                     </div>
                                 </div>
@@ -108,7 +108,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-right">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Operations Head</h3>
                                     <span className="text-gray-500 dark:text-gray-400">Baoiam Innovations Pvt Ltd</span>
-                                    <div className="flex items-center justify-end text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center justify-end text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2025
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-left">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Web Developer</h3>
                                     <span className="text-gray-500 dark:text-gray-400">Baoiam Innovations Pvt Ltd</span>
-                                    <div className="flex items-center text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2025
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-right">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">JOVAC-Azure with Gen AI</h3>
                                     <span className="text-gray-500 dark:text-gray-400">Certification</span>
-                                    <div className="flex items-center justify-end text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center justify-end text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> May - July 2025
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-left">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Infosys certified network programme</h3>
                                     <span className="text-gray-500 dark:text-gray-400">Infosys</span>
-                                    <div className="flex items-center text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2024
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-right">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Software engineering programme</h3>
                                     <span className="text-gray-500 dark:text-gray-400">IIT Kharagpur</span>
-                                    <div className="flex items-center justify-end text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center justify-end text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> 2024
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@ const Qualification = () => {
                                 <div className="w-1/2 text-left">
                                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Python developer (virtual)</h3>
                                     <span className="text-gray-500 dark:text-gray-400">InternPe</span>
-                                    <div className="flex items-center text-sm text-gray-400 mt-1">
+                                    <div className="flex items-center text-sm text-gray-400 dark:text-gray-400 mt-1">
                                         <Calendar size={14} className="mr-1" /> June - July 2024
                                     </div>
                                 </div>

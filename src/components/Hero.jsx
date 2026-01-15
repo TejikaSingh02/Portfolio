@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Send } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 pt-16">
+        <section id="home" className="min-h-screen flex items-center justify-center pt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
 

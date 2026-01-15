@@ -75,18 +75,18 @@ const Contact = () => {
 
                             <div className="space-y-4">
                                 <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 focus-within:ring-2 focus-within:ring-blue-600 transition-all">
-                                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Name</label>
-                                    <input type="text" name="name" placeholder="Insert your name" className="w-full bg-transparent outline-none text-gray-900 dark:text-white" required />
+                                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-300 mb-1">Name</label>
+                                    <input type="text" name="name" placeholder="Insert your name" className="w-full bg-transparent outline-none text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500" required />
                                 </div>
 
                                 <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 focus-within:ring-2 focus-within:ring-blue-600 transition-all">
-                                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Mail</label>
-                                    <input type="email" name="email" placeholder="Insert your email" className="w-full bg-transparent outline-none text-gray-900 dark:text-white" required />
+                                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-300 mb-1">Mail</label>
+                                    <input type="email" name="email" placeholder="Insert your email" className="w-full bg-transparent outline-none text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500" required />
                                 </div>
 
                                 <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-4 focus-within:ring-2 focus-within:ring-blue-600 transition-all">
-                                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Project</label>
-                                    <textarea name="project_details" placeholder="Write your project" rows="4" className="w-full bg-transparent outline-none text-gray-900 dark:text-white resize-none" required></textarea>
+                                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-300 mb-1">Project</label>
+                                    <textarea name="project_details" placeholder="Write your project" rows="4" className="w-full bg-transparent outline-none text-gray-900 dark:text-white resize-none placeholder-gray-400 dark:placeholder-gray-500" required></textarea>
                                 </div>
                             </div>
 

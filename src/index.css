@@ -1,14 +1,26 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #3b82f6;
+}
+
+/* Explicit fallback for dark mode */
 :root {
-  --color-primary: #3b82f6; /* Example primary */
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+/* Apply directly to body with high specificity */
+html.dark body {
+  background-color: #030712 !important;
+  color: #f9fafb !important;
 }
 
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #FAFAFA;
-  color: #333;
+  @apply m-0 font-['Poppins'] bg-gray-50 text-gray-900 transition-colors duration-300;
 }
 
 html {

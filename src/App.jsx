@@ -13,7 +13,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen text-gray-900 dark:text-white transition-colors duration-300 font-[Poppins]">
+    <div className="min-h-screen text-gray-900 dark:text-white transition-colors duration-300 font-[Poppins]">
       <Navbar />
       <main className="overflow-hidden">
         <Hero />
